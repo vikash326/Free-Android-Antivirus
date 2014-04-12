@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <RelativeLayout
+            android:id="@+id/st_dashBoard2"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/st_logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#243303"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/bar_pressed1" >
+
+                <ImageView
+                    android:id="@+id/st_imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginTop="1dip"
+                    android:src="@drawable/protection_threat" />
+
+                <TextView
+                    android:id="@+id/st_textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/st_title"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/st_threatslist"
+                android:layout_width="match_parent"
+                android:layout_height="435dip" >
+            </ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="150dip"
+                android:background="#243303" >
+
+        		<ImageView
+        		    android:id="@+id/st_buy_premium"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="150dip"
+        		    android:layout_alignParentBottom="true"
+        		    android:layout_centerHorizontal="true"
+        		    android:scaleType="fitXY"
+        		    android:src="@drawable/premium_bg" />
+
+        		<TextView
+        		    android:id="@+id/st_p_textView4"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignTop="@+id/st_buy_premium"
+        		    android:layout_centerHorizontal="true"
+        		    android:layout_marginTop="4dip"
+        		    android:text="@string/p_title"
+        		    android:textAppearance="?android:attr/textAppearanceMedium"
+        		    android:textColor="#000000"
+        		    android:textSize="26sp" />
+
+        		<TextView
+        		    android:id="@+id/st_p_textView2"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignLeft="@+id/st_p_textView4"
+        		    android:layout_below="@+id/st_p_textView4"
+        		    android:layout_marginTop="3dip"
+        		    android:text="@string/p_featurs1"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#000000"
+        		    android:textSize="18sp" />
+
+        		<TextView
+        		    android:id="@+id/st_p_textView3"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_below="@+id/st_p_textView4"
+        		    android:layout_marginLeft="10dip"
+        		    android:layout_marginTop="3dip"
+        		    android:layout_toRightOf="@+id/st_p_textView2"
+        		    android:text="@string/p_featurs2"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#000000"
+        		    android:textSize="18sp" />
+        		
+        		<TextView
+        		    android:id="@+id/st_p_textView5"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_below="@+id/st_p_textView4"
+        		    android:layout_centerVertical="true"
+        		    android:layout_marginLeft="10dip"
+        		    android:layout_marginTop="10dip"
+        		    android:layout_toRightOf="@+id/st_p_textView3"
+        		    android:text="@string/p_price"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#ffffff"
+        		    android:textSize="40sp"
+        		    android:textStyle="bold" />
+
+        		<TextView
+        		    android:id="@+id/st_p_textView6"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignLeft="@+id/st_p_textView5"
+        		    android:layout_below="@+id/st_p_textView5"
+        		    android:text="Lifetime License"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#ffffff"
+        		    android:textSize="20sp" />
+        		
+        	</RelativeLayout>
+
+        </LinearLayout>
+        
+        
+        
+
+</LinearLayout>

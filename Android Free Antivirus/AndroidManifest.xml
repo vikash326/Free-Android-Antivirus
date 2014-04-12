@@ -1,0 +1,115 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="free.an.droid.antivirus.rinix"
+    android:versionCode="3"
+    android:versionName="1.2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="android.free.antivirus.Rinix"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="android.free.antivirus.M"
+            android:label="@string/title_activity_m"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="android.free.antivirus.P"
+            android:label="@string/title_activity_p"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="android.free.antivirus.About"
+            android:label="@string/title_activity_p"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="android.free.antivirus.ST"
+            android:label="@string/title_activity_p"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="android.free.antivirus.VxR" >
+        </service>
+        <service android:name="android.free.antivirus.SST" >
+        </service>
+        <service android:name="android.free.antivirus.CFU" >
+        </service>
+
+        <receiver
+            android:name="android.free.antivirus.AI"
+            android:exported="true"
+            android:priority="2147483647" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_ADDED" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" >
+                </action>
+
+                <data android:scheme="package" >
+                </data>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="android.free.antivirus.Wake_CFU"
+            android:exported="true"
+            android:priority="1000" >
+        </receiver>
+
+        <activity
+            android:name="android.free.antivirus.LPS"
+            android:label="@string/title_activity_p"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="android.free.antivirus.LPT"
+            android:label="@string/title_activity_p"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <receiver
+            android:name="android.free.antivirus.BTC"
+            android:exported="true"
+            android:priority="2147483647" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="android.free.antivirus.RM"
+            android:exported="true"
+            android:priority="999" >
+            <intent-filter>
+                <action android:name="com.dawl.rinix.remove_package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

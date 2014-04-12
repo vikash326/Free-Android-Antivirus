@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#354b03"
+    android:orientation="vertical" >
+    
+            <RelativeLayout
+                android:id="@+id/dashBoard25"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/logo25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+    
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="#75a609" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dip"
+                    android:text="About"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+</RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="213dip" >
+
+                <TextView
+                    android:id="@+id/m_stat_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5dip"
+                    android:text="Rinix Mobile Security"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fdfdf5"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/m_stat_msg"
+                    android:layout_below="@+id/m_stat_msg"
+                    android:paddingTop="8dip"
+                    android:text="Version 1.0.0.44"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fdfdf5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/textView3"
+                    android:text="Copyright 2012 - 2013 by Vicatec Research Lab"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fdfdf5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_below="@+id/textView4"
+                    android:text="All rights reserved"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fdfdf5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_below="@+id/textView5"
+                    android:paddingTop="20dip"
+                    android:text="Support : support@rinixmobilesecurity.com"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fdfdf5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView6"
+                    android:layout_below="@+id/textView6"
+                    android:text="Website : www.rinixmobilesecurity.com"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fdfdf5"
+                    android:textSize="20sp" />
+                
+            </RelativeLayout>
+
+</LinearLayout>

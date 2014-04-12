@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#233304"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/dashBoard2"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="@drawable/bar_pressed1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="4dip"
+            android:text="@string/m_main_title"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageView
+                android:id="@+id/p_scan_pbbar"
+                android:layout_width="275dip"
+                android:layout_height="12dip"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/block_bg" />
+        
+        <android.free.antivirus.widgets.DawlProgressBar
+            android:id="@+id/dawlProgressBar"
+            style="@style/Widget.ProgressBar.RegularProgressBar"
+            android:layout_width="275dip"
+            android:layout_height="12dip"
+            android:layout_alignLeft="@+id/p_scan_pbbar"
+            android:layout_alignTop="@+id/p_scan_pbbar"
+            android:max="100" />
+        
+        <TextView
+            android:id="@+id/m_stat_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/p_scan_pbbar"
+            android:layout_below="@+id/p_scan_pbbar"
+            android:layout_marginTop="15dip"
+            android:paddingTop="6dip"
+            android:text="@string/pl_scanning_txt"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/p_scanfile"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/m_stat_msg"
+                android:layout_alignBottom="@+id/m_stat_msg"
+                android:layout_toRightOf="@+id/m_stat_msg"
+                android:ellipsize="middle"
+                android:paddingLeft="3dip"
+                android:paddingTop="6dip"
+                android:singleLine="true"
+                android:text="@string/pl_intializing_txt"
+                android:textColor="#e0d01c"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/m_stat_msg"
+                android:layout_below="@+id/m_stat_msg"
+                android:layout_marginTop="5dip"
+                android:paddingTop="6dip"
+                android:text="@string/pl_app_scanned_txt"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+		
+		    <TextView
+		        android:id="@+id/p_scan_filecount"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/textView3"
+		        android:layout_alignBottom="@+id/textView3"
+		        android:layout_toRightOf="@+id/textView3"
+		        android:ellipsize="middle"
+		        android:paddingBottom="6dip"
+		        android:paddingLeft="3dip"
+		        android:singleLine="true"
+		        android:text="..."
+		        android:textColor="#e0d01c"
+		        android:textSize="14sp" />
+		    
+		<TextView
+		    android:id="@+id/textView4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textView3"
+		    android:layout_below="@+id/textView3"
+		    android:layout_marginTop="5dip"
+		    android:paddingTop="6dip"
+		    android:text="@string/pl_threats_found_txt"
+		    android:textColor="#ffffff"
+		    android:textSize="14sp" />
+	
+	    <TextView
+	        android:id="@+id/p_scan_threatcount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/textView4"
+	        android:layout_alignBottom="@+id/textView4"
+	        android:layout_toRightOf="@+id/textView4"
+	        android:paddingLeft="3dip"
+	        android:text="0"
+	        android:textColor="#e0d01c"
+	        android:textSize="14sp" />
+	    
+	    
+        	<ImageView
+                android:id="@+id/p_hidescan_bg"
+                android:layout_width="275dip"
+                android:layout_height="40dip"
+                android:layout_marginTop="35dip"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView4"
+                android:scaleType="fitXY"
+                android:src="@drawable/block_bg" />
+
+        	    <ImageView
+        	        android:id="@+id/p_hidescan"
+        	        android:layout_width="269dip"
+        	        android:layout_height="38dip"
+        	        android:layout_alignTop="@+id/p_hidescan_bg"
+        	        android:layout_centerHorizontal="true"
+        	        android:paddingTop="2dip"
+        	        android:scaleType="fitXY"
+        	        android:src="@drawable/yellow_btn" />
+
+        	    <TextView
+        	        android:id="@+id/textView5"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignTop="@+id/p_hidescan_bg"
+        	        android:layout_centerHorizontal="true"
+        	        android:paddingTop="5dip"
+        	        android:text="@string/pl_hidescan"
+        	        android:textAppearance="?android:attr/textAppearanceMedium"
+        	        android:textColor="#ffffff"
+        	        android:textSize="16sp" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+
+        		<ImageView
+        		    android:id="@+id/p_buy_premium"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="100dip"
+        		    android:layout_alignParentBottom="true"
+        		    android:layout_centerHorizontal="true"
+        		    android:scaleType="fitXY"
+        		    android:src="@drawable/premium_bg" />
+
+        		<TextView
+        		    android:id="@+id/p_p_textView4"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignTop="@+id/p_buy_premium"
+        		    android:layout_centerHorizontal="true"
+        		    android:layout_marginTop="4dip"
+        		    android:text="@string/p_title"
+        		    android:textAppearance="?android:attr/textAppearanceMedium"
+        		    android:textColor="#000000"
+        		    android:textSize="16sp" />
+
+        		<TextView
+        		    android:id="@+id/p_p_textView2"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignLeft="@+id/p_p_textView4"
+        		    android:layout_below="@+id/p_p_textView4"
+        		    android:layout_marginTop="3dip"
+        		    android:text="@string/p_featurs1"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#000000"
+        		    android:textSize="11sp" />
+
+        		<TextView
+        		    android:id="@+id/p_p_textView3"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_below="@+id/p_p_textView4"
+        		    android:layout_marginLeft="10dip"
+        		    android:layout_marginTop="3dip"
+        		    android:layout_toRightOf="@+id/p_p_textView2"
+        		    android:text="@string/p_featurs2"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#000000"
+        		    android:textSize="11sp" />
+        		
+        		<TextView
+        		    android:id="@+id/p_p_textView5"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_below="@+id/p_p_textView4"
+        		    android:layout_centerVertical="true"
+        		    android:layout_marginLeft="10dip"
+        		    android:layout_marginTop="10dip"
+        		    android:layout_toRightOf="@+id/p_p_textView3"
+        		    android:text="@string/p_price"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#ffffff"
+        		    android:textSize="30sp"
+        		    android:textStyle="bold" />
+
+        		<TextView
+        		    android:id="@+id/p_p_textView6"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignLeft="@+id/p_p_textView5"
+        		    android:layout_below="@+id/p_p_textView5"
+        		    android:text="Lifetime License"
+        		    android:textAppearance="?android:attr/textAppearanceSmall"
+        		    android:textColor="#ffffff"
+        		    android:textSize="10sp" />
+        		
+        	</RelativeLayout>
+
+</LinearLayout>

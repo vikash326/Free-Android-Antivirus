@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<RelativeLayout android:id="@+id/title_template"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+		<ImageView
+		    android:id="@+id/icon"
+		    android:layout_width="32dip"
+		    android:layout_height="30dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/warnning" />
+
+		<TextView
+		    android:id="@+id/alertTitle"
+		    style="?android:attr/textAppearanceLarge"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="5dip"
+		    android:layout_toRightOf="@+id/icon"
+		    android:ellipsize="end"
+		    android:singleLine="true"
+		    android:textSize="18dip" />
+
+	</RelativeLayout>
+	<ImageView android:id="@+id/titleDivider"
+		android:layout_width="fill_parent" android:layout_height="1dip"
+		android:scaleType="fitXY" android:gravity="fill_horizontal"
+		android:src="@android:drawable/divider_horizontal_bright" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">androïde gratis contre-virus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_rinix">Rinix</string>
+    <string name="title_activity_m">M</string>
+    <string name="title_activity_p">P</string>
+    <string name="m_initial">Ce dispositif n\'est pas encore numérisé.\nCommencez votre premier scruter</string>
+    <string name="p_title">Rinix Mobile Security - Premium</string>
+    <string name="p_featurs1">Anti virus\nLocate\nLock\nWipe\nScream</string>
+    <string name="p_featurs2">Call Blocker\nSMS Blocker\nPrivacy Protection\nReal Time Protection\nAuto Update</string>
+    <string name="p_price">$5.55</string>
+    <string name="m_include_sdcard">scruter carte mémoire</string>
+    <string name="m_btn_scan_now">scruter</string>
+    <string name="m_main_title">contre-virus 2014</string>
+    <string name="pl_scanning_txt">scansion :</string>
+    <string name="pl_app_scanned_txt">objets numérisés: </string>
+    <string name="pl_threats_found_txt">virus trouvé: </string>
+    <string name="pl_intializing_txt">initialiser...</string>
+    <string name="pl_hidescan">cacher</string>
+    <string name="st_title">détecté virus</string>
+    <string name="dash_LastScan">récents Scan:</string>
+    <string name="dash_Scanned">numérisés</string>
+    <string name="dash_NoThreatFound">nul virus trouvé.</string>
+    <string name="dash_apps">objets.</string>
+    <string name="dash_ThreatFound">virus trouvé.</string>
+    
+    
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ndróide gratuito anti-virus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_rinix">Rinix</string>
+    <string name="title_activity_m">M</string>
+    <string name="title_activity_p">P</string>
+    <string name="m_initial">Este dispositivo não é verificado ainda.\ncomeçar a primeira varredura</string>
+    <string name="p_title">Rinix Mobile Security - Premium</string>
+    <string name="p_featurs1">Anti virus\nLocate\nLock\nWipe\nScream</string>
+    <string name="p_featurs2">Call Blocker\nSMS Blocker\nPrivacy Protection\nReal Time Protection\nAuto Update</string>
+    <string name="p_price">$5.55</string>
+    <string name="m_include_sdcard">esquadrinhar SD Card</string>
+    <string name="m_btn_scan_now">esquadrinhar</string>
+    <string name="m_main_title">anti-virus 2014</string>
+    <string name="pl_scanning_txt">exploração :</string>
+    <string name="pl_app_scanned_txt">objetos verificado : </string>
+    <string name="pl_threats_found_txt">virus encontrado : </string>
+    <string name="pl_intializing_txt">Initializing ...</string>
+    <string name="pl_hidescan">esconder</string>
+    <string name="st_title">detectada virus</string>
+    <string name="dash_LastScan">recente esquadrinhar:</string>
+    <string name="dash_Scanned">verificado</string>
+    <string name="dash_NoThreatFound">não virus encontrado.</string>
+    <string name="dash_apps">objetos.</string>
+    <string name="dash_ThreatFound"> virus(es) encontrado.</string>
+</resources>

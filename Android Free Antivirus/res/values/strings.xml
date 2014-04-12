@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rinix Antivirus 2014</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_rinix">Rinix</string>
+    <string name="title_activity_m">M</string>
+    <string name="title_activity_p">P</string>
+    <string name="m_initial">This device is not scanned yet.\nStart Your First Scan</string>
+    <string name="p_title">Rinix Mobile Security - Premium</string>
+    <string name="p_featurs1">Anti virus\nLocate\nLock\nWipe\nScream</string>
+    <string name="p_featurs2">Call Blocker\nSMS Blocker\nPrivacy Protection\nReal Time Protection\nAuto Update</string>
+    <string name="p_price">$9.99</string>
+    <string name="m_include_sdcard">Scan SD Card</string>
+    <string name="m_btn_scan_now">SCAN NOW</string>
+    <string name="m_main_title">Antivirus 2014</string>
+    <string name="pl_scanning_txt">Scanning :</string>
+    <string name="pl_app_scanned_txt">Applications Scanned : </string>
+    <string name="pl_threats_found_txt">Threats Found : </string>
+    <string name="pl_intializing_txt">Initializing ...</string>
+    <string name="pl_hidescan">HIDE SCAN</string>
+    <string name="st_title">Detected Threats</string>
+    <string name="dash_LastScan">Last Scan:</string>
+    <string name="dash_Scanned">Scanned</string>
+    <string name="dash_NoThreatFound">No threats found.</string>
+    <string name="dash_apps">apps.</string>
+    <string name="dash_ThreatFound"> threat(s) found.</string>
+    <string name="up_def_init">Contacting server..</string>
+    <string name="up_def_error">Unexpected error occured..</string>
+    <string name="up_def_success">Definitions updated successfully</string>
+    <string name="up_def_percent">% completed</string>
+    <string name="m_info_first">Virus definitions update available</string>
+    <string name="m_def_no_net">No internet..</string>
+    
+    
+
+</resources>

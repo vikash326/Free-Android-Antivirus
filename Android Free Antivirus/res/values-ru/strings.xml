@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">бесплатно антивирус</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_rinix">Rinix</string>
+    <string name="title_activity_m">M</string>
+    <string name="title_activity_p">P</string>
+    <string name="m_initial">Это устройство еще не сканируются.\nНачать Первое сканирование</string>
+    <string name="p_title">Rinix Mobile Security - Premium</string>
+    <string name="p_featurs1">Anti virus\nLocate\nLock\nWipe\nScream</string>
+    <string name="p_featurs2">Call Blocker\nSMS Blocker\nPrivacy Protection\nReal Time Protection\nAuto Update</string>
+    <string name="p_price">$5.55</string>
+    <string name="m_include_sdcard">сканировать карты памяти</string>
+    <string name="m_btn_scan_now">сканировать</string>
+    <string name="m_main_title">антивирус 2014</string>
+    <string name="pl_scanning_txt">сканирующий :</string>
+    <string name="pl_app_scanned_txt">файлы проверено : </string>
+    <string name="pl_threats_found_txt">вирус найденный : </string>
+    <string name="pl_intializing_txt">инициировать ...</string>
+    <string name="pl_hidescan">скрываться</string>
+    <string name="st_title">найденный вирус</string>
+    <string name="dash_LastScan">последний анализ:</string>
+    <string name="dash_Scanned">Отсканированные</string>
+    <string name="dash_NoThreatFound">нет вирус найденный.</string>
+    <string name="dash_apps">файл.</string>
+    <string name="dash_ThreatFound"> вирус найденный.</string>
+</resources>

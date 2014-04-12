@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">アンドロイド無料のアンチウイルス</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_rinix">Rinix</string>
+    <string name="title_activity_m">M</string>
+    <string name="title_activity_p">P</string>
+    <string name="m_initial">この携帯はまだスキャンされません。\n初めてのスキャンを開始します</string>
+    <string name="p_title">Rinix Mobile Security - Premium</string>
+    <string name="p_featurs1">Anti virus\nLocate\nLock\nWipe\nScream</string>
+    <string name="p_featurs2">Call Blocker\nSMS Blocker\nPrivacy Protection\nReal Time Protection\nAuto Update</string>
+    <string name="p_price">$5.55</string>
+    <string name="m_include_sdcard">メモリカードのスキャン</string>
+    <string name="m_btn_scan_now">スキャン</string>
+    <string name="m_main_title">アンチウイルス 2014</string>
+    <string name="pl_scanning_txt">スキャン： :</string>
+    <string name="pl_app_scanned_txt">アプリケーションは、スキャン： : </string>
+    <string name="pl_threats_found_txt">ウイルスが見つかりました： : </string>
+    <string name="pl_intializing_txt">初期化中...</string>
+    <string name="pl_hidescan">隠す</string>
+    <string name="st_title">検出された脅威</string>
+    <string name="dash_LastScan">ラストスキャン：:</string>
+    <string name="dash_Scanned">スキャン</string>
+    <string name="dash_NoThreatFound">ウイルスは見つかりませんでした。</string>
+    <string name="dash_apps">ファイル。</string>
+    <string name="dash_ThreatFound"> ウイルスが見つかりました。</string>
+</resources>
