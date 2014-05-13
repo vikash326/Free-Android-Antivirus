@@ -10,6 +10,10 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
+
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -30,6 +34,7 @@ import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import free.an.droid.antivirus.rinix.R;
@@ -54,6 +59,7 @@ public class M extends Activity {
 	private TextView tv2;
 	private ImageView iv;
 	private ProgressBar pb;
+	private AdView adView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -80,7 +86,6 @@ public class M extends Activity {
 		ImageView showThreats = (ImageView) findViewById(R.id.m_imageView1);
 		ImageView scanSDCard = (ImageView) findViewById(R.id.m_includeSDCardBg1);
 		final ImageView right = (ImageView) findViewById(R.id.m_right1);
-		ImageView buyPremium = (ImageView) findViewById(R.id.m_buy_premium);
 		tv1 = (TextView) findViewById(R.id.m_stat_msg);
 		tv2 = (TextView) findViewById(R.id.m_info_txt);
 		iv = (ImageView) findViewById(R.id.m_info_btn);
@@ -205,6 +210,15 @@ public class M extends Activity {
 
 			}
 
+		} else {
+			Intent i;
+
+			i = new Intent(M.this, P.class);
+			i.putExtra("SDCARD", includeSDCard);
+			i.putExtra("FIRSTRUN", isFirstRun);
+			startActivity(i);
+			finish();
+
 		}
 
 		scanNow.setOnClickListener(new View.OnClickListener() {
@@ -246,16 +260,6 @@ public class M extends Activity {
 
 		});
 
-		buyPremium.setOnClickListener(new View.OnClickListener() {
-
-			public void onClick(View v) {
-				Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri
-						.parse("market://details?id=antivirus.security.android.rinix"));
-				startActivity(marketIntent);
-			}
-
-		});
-
 		c_v = settings.getString("DEF_CURRENT", "");
 		a_v = settings.getString("DEF_LATEST", "");
 
@@ -264,13 +268,19 @@ public class M extends Activity {
 		iv.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				//new dS().execute();
+				// new dS().execute();
 			}
 
 		});
 
 		// }
 		// }
+
+		adView = new AdView(this, AdSize.BANNER, "a1530adf9a86b20");
+		LinearLayout layout = (LinearLayout) findViewById(R.id.m_adContainer);
+		layout.addView(adView);
+		AdRequest adRequest = new AdRequest();
+		adView.loadAd(adRequest);
 
 	}
 
@@ -407,7 +417,7 @@ public class M extends Activity {
 				}
 
 			} catch (Exception e) {
-				//tv1.setText(getResources().getString(R.string.up_def_error));
+				// tv1.setText(getResources().getString(R.string.up_def_error));
 				Log.d("DLS", "Suiciding..");
 				e.printStackTrace();
 			}
@@ -440,7 +450,7 @@ public class M extends Activity {
 
 				File d = new File(Environment.getExternalStorageDirectory()
 						+ "/rinix/temp-f/vxoid.bin");
-				//d.delete();
+				// d.delete();
 
 			} catch (Exception e) {
 				return;

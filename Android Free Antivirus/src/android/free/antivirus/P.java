@@ -1,5 +1,9 @@
 package android.free.antivirus;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -12,6 +16,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.free.antivirus.widgets.DawlProgressBar;
 import free.an.droid.antivirus.rinix.R;
@@ -30,6 +35,7 @@ public class P extends Activity {
 	private BroadcastReceiver receiver;
 	private IntentFilter filter;
 	public static boolean isVisible = false;
+	private AdView adView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -47,7 +53,6 @@ public class P extends Activity {
 		fileScanned = (TextView) findViewById(R.id.p_scanfile);
 		totalScanned = (TextView) findViewById(R.id.p_scan_filecount);
 		totalThreats = (TextView) findViewById(R.id.p_scan_threatcount);
-		buyPremium = (ImageView) findViewById(R.id.p_buy_premium);
 		hideScan = (ImageView) findViewById(R.id.p_hidescan);
 
 		W w = new W(fileScanned, totalScanned, totalThreats, progressBar);
@@ -63,16 +68,6 @@ public class P extends Activity {
 			public void onClick(View v) {
 				state();
 			}
-		});
-
-		buyPremium.setOnClickListener(new View.OnClickListener() {
-
-			public void onClick(View v) {
-				Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri
-						.parse("market://details?id=antivirus.security.android.rinix"));
-				startActivity(marketIntent);
-			}
-
 		});
 
 		filter = new IntentFilter("android.free.antivirus.completedscan");
@@ -96,6 +91,12 @@ public class P extends Activity {
 			editor.putString("DEF_CURRENT", "2.2.3");
 			editor.commit();
 		}
+
+		adView = new AdView(this, AdSize.BANNER, "a1530adf9a86b20");
+		LinearLayout layout = (LinearLayout) findViewById(R.id.p_adContainer);
+		layout.addView(adView);
+		AdRequest adRequest = new AdRequest();
+		adView.loadAd(adRequest);
 
 	}
 
